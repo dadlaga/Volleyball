@@ -27,7 +27,7 @@ public class Main extends JFrame
         newTeam = new JButton("New Team");
         newPlayer = new JButton("New Player");
         matchDatabase = new JButton("Match DataBase");
-        version = new JLabel("1.0");
+        version = new JLabel("  1.0  ");
         pan = new ImagePanel(background);
         watch();
     }
@@ -40,6 +40,12 @@ public class Main extends JFrame
         newPlayer.setBounds(300,200,200,49);
         matchDatabase.setBounds(300,250,200,49);
         version.setBounds(20,20,20,20);
+        newMatch.setBackground(Color.CYAN);
+        newTeam.setBackground(Color.CYAN);
+        newPlayer.setBackground(Color.CYAN);
+        matchDatabase.setBackground(Color.CYAN);
+        
+        
         add(newMatch);
         add(newTeam);
         add(newPlayer);
